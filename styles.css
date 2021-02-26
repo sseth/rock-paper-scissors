@@ -1,9 +1,84 @@
+body {
+    background: #333340;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
 h1 {
+    background: white;
+    color: black;
     text-align: center;
-    font-family: sans-serif;
+    font-size: clamp(12px, 6vw, 50px);
+    font-family: 'Courier New', monospace;
+    padding: 3vh;
+    margin: 0;
+}
+
+.scorecard {
+    margin: 6vh auto;
+    background-color: grey;
+    position: relative;
+    font-size: 8vh;
+    font-family: Impact;
+    width: 25vh;
+    border-style: solid;
+    border-color: white;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    padding: 1vh;
+}
+
+.player {
+    text-align: center;
+    background-color: #FFA347;
+    font-size: 3vh;
+    font-family: Courier, monospace;
+    width: 2em;
+    border-width: thin;
+    border-color: white;
+    border-style: solid;
+    border-radius: 3px;
+    position: absolute;
+}
+
+#p1 {
+    top: 37%;
+    left: -12%;
+}
+
+#p2 {
+    top: 37%;
+    left: 90%;
+}
+
+.message {
+    text-align: center;
+    font-family: monospace;
+    font-size: 4vh;
+}
+
+.rps-container {
+    text-align: center;
+}
+
+.rps-image {
+    display: inline-block;
+    margin: 3vw;
 }
 
 .rps-image img {
-    width: 15vw;
-    height: 15vw;
+    width: 10vh;
+    height: 10vh;
+    background-color: white;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+#next-move {
+    text-align: center;
+    font-size: 4vh;
+    font-family: monospace;
+    top: 20vh;
 }

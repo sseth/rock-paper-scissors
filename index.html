@@ -9,16 +9,21 @@
 </head>
 
 <body>
-  <h1>ROCK / PAPER / SCISSORS</h1>
+  <header>
+    <h1>ROCK&nbsp;|&nbsp;PAPER&nbsp;|&nbsp;SCISSORS</h1>
+  </header>
+
   <div class="scorecard">
     <div class="player" id="p1">you</div>
     <div class="player" id="p2">cpu</div>
     <span id="p1-score">0</span> :
     <span id="p2-score">0</span>
   </div>
+
   <div class="message">
     <p>You win!</p>
   </div>
+
   <div class="rps-container">
     <div class="rps-image" id="rock">
       <img src="images/rock.png" alt="Rock" title="Rock">
@@ -30,7 +35,11 @@
       <img src="images/scissors.png" alt="Scissors" title="Scissors">
     </div>
   </div>
-  <p id="">Next move</p>
+
+  <div id="next-move">
+    <p>Next move</p>
+  </div>
+
   <script src="app.js"></script>
 </body>
 
