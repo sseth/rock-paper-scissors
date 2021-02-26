@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>RockPaperScissors</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/favicon.png" type="image/png">
 </head>
+
 <body>
-  
+  <h1>ROCK / PAPER / SCISSORS</h1>
+  <div class="scorecard">
+    <div class="player" id="p1">you</div>
+    <div class="player" id="p2">cpu</div>
+    <span id="p1-score">0</span> :
+    <span id="p2-score">0</span>
+  </div>
+  <div class="message">
+    <p>You win!</p>
+  </div>
+  <div class="rps-container">
+    <div class="rps-image" id="rock">
+      <img src="images/rock.png" alt="Rock" title="Rock">
+    </div>
+    <div class="rps-image" id="paper">
+      <img src="images/paper.png" alt="Paper" title="Paper">
+    </div>
+    <div class="rps-image" id="scissors">
+      <img src="images/scissors.png" alt="Scissors" title="Scissors">
+    </div>
+  </div>
+  <p id="">Next move</p>
   <script src="app.js"></script>
 </body>
+
 </html>
