@@ -43,7 +43,7 @@ h1 {
     position: absolute;
 }
 
-#p {
+#u {
     top: 37%;
     left: -12%;
 }
@@ -58,6 +58,7 @@ h1 {
     font-family: monospace;
     font-size: 4vh;
     font-weight: bold;
+    margin-bottom: 1vh;;
 }
 
 .rps-container {
