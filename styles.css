@@ -70,6 +70,8 @@ h1 {
     margin: 3vw;
 }
 
+/* why do '.rps-image img' rules override the
+   win/lose/draw classes, but these don't? */
 img {
     width: 10vh;
     height: 10vh;
@@ -92,16 +94,16 @@ img:hover {
 }
 
 .win {
-    border: 5px solid green;
-    box-shadow: 0 0 10px #0E0;
+    border: 5px solid #0E0;
+    box-shadow: 0 0 10px green;
 }
 
 .lose {
-    border: 5px solid red;
-    box-shadow: 0 0 10px #E00;
+    border: 5px solid #E00;
+    box-shadow: 0 0 10px red;
 }
 
 .draw {
-    border: 5px solid gray;
-    box-shadow: 0 0 10px #444;
+    border: 5px solid #444;
+    box-shadow: 0 0 10px gray;
 }
