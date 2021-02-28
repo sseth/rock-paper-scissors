@@ -70,7 +70,7 @@ h1 {
     margin: 3vw;
 }
 
-.rps-image img {
+img {
     width: 10vh;
     height: 10vh;
     background-color: white;
@@ -89,4 +89,19 @@ img:hover {
     font-size: 4vh;
     font-family: monospace;
     top: 20vh;
+}
+
+.win {
+    border: 5px solid green;
+    box-shadow: 0 0 10px #0E0;
+}
+
+.lose {
+    border: 5px solid red;
+    box-shadow: 0 0 10px #E00;
+}
+
+.draw {
+    border: 5px solid gray;
+    box-shadow: 0 0 10px #444;
 }

@@ -14,20 +14,26 @@ function getCompMove() {
     return ['Rock', 'Paper', 'Scissors'][rand];
 }
 
-function win(c) {
+function win(img, c) {
     userScore++;
     uscoreElem.innerHTML = userScore;
     message.innerHTML = c + ": You win";
+    img.classList.add('win');
+    setTimeout(() => img.classList.remove('win'), 400);
 }
 
-function lose(c) {
+function lose(img, c) {
     compScore++;
     cscoreElem.innerHTML = compScore;
     message.innerHTML = c + ": You lose";
+    img.classList.add('lose');
+    setTimeout(() => img.classList.remove('lose'), 400);
 }
 
-function draw(c) {
+function draw(img, c) {
     message.innerHTML = c + ": It's a draw";
+    img.classList.add('draw');
+    setTimeout(() => img.classList.remove('draw'), 400);
 }
 
 function play() {
@@ -37,17 +43,17 @@ function play() {
         case 'RockScissors':
         case 'ScissorsPaper':
         case 'PaperRock':
-            win(compMove);
+            win(this, compMove);
             break;
         case 'RockRock':
         case 'PaperPaper':
         case 'ScissorsScissors':
-            draw(compMove);
+            draw(this, compMove);
             break;
         case 'RockPaper':
         case 'PaperScissors':
         case 'ScissorsRock':
-            lose(compMove);
+            lose(this, compMove);
     }
 
 }
@@ -59,3 +65,4 @@ function main() {
 }
 
 main();
+
